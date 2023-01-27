@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: transparent;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 95%;
+  max-height: 95%;
+  border: 5px solid rgba(255, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.arrow {
+  position: relative;
+  top: 0;
+  left: 0.1em;
+  border: solid rgba(200, 200, 200, 0.8);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#background {
+  height: 100%;
+  width: 100%;
+  background-color: #33526f;
+  bottom: 0;
+}
+
+#backButton {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: rgba(1, 1, 1, 0.5);
+  border-radius: 50%;
+}
+
+@media (min-width: 500px) and (min-height: 500px) {
+  #backButton {
+    top: 5vh;
+    left: 5vh;
+    height: 4vh;
+    width: 4vh;
+  }
+}

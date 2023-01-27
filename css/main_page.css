@@ -1,0 +1,142 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: "virgo_displayregular";
+  background-color: transparent;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "virgo_displayregular";
+  src: url("../fonts/virgo_display-webfont.woff2") format("woff2"),
+    url("../fonts/virgo_display-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+button {
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "virgo_displayregular";
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  margin: 5px;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: #ffc229;
+  box-shadow: #ff6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+button:active {
+  transform: scale(1.025);
+}
+
+p {
+  vertical-align: middle;
+  display: inline-block;
+  *display: inline;
+  margin: 0 3%;
+}
+
+@media (min-width: 415px) {
+  button {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+  }
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+
+#background {
+  height: 100%;
+  width: 100%;
+  background-color: #33526f;
+}
+
+#page {
+  height: 100%;
+  width: 100%;
+  background-image: url(../media/banquet_HD.jpeg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto;
+  border: 2px dashed #333;
+}
+
+#name {
+  display: flex;
+  position: fixed;
+  top: 0;
+  margin: 1%;
+  max-width: 75%;
+  max-height: 20%;
+  align-self: top;
+}
+
+#buttons {
+  position: fixed;
+  top: 30%;
+}
+
+#bandeau {
+  padding: 10px 0 0 0;
+  position: fixed;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(200, 200, 200, 0.7);
+  width: 100%;
+  bottom: 0;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
