@@ -10,7 +10,7 @@ function request($numero) {
     $servername = 'localhost';
     $dbname = 'armorikes';
     $username = 'armorikes';
-    $password = 'p5nUL7EfXcxJO1sm'; 
+    $password = ''; //TODO : fill in with the right password 
     $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8mb4", $username, $password);
     
     // set the PDO error mode to exception
